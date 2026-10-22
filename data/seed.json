@@ -1,0 +1,668 @@
+{
+  "profile": [
+    {
+      "full_name": "مهند عبدالله سلامة",
+      "job_title": "قائد أعمال وتطوير الأفراد وأعمال تشغيل الشركات",
+      "bio": "خبرة تتجاوز 12 عاماً في تطوير وتدريب الموارد البشرية والعمليات الإدارية والتشغيل",
+      "organization": "عامل حر - منصة رائد",
+      "avatar_url": "/api/preview/profile",
+      "stat1_value": "12+",
+      "stat1_label": "سنة خبرة",
+      "stat2_value": "5000+",
+      "stat2_label": "متدرب",
+      "stat3_value": "100+",
+      "stat3_label": "برنامج تدريبي",
+      "stat4_value": "+20",
+      "stat4_label": "شهادات الشكر والتقدير"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "4b9de2df-e926-474d-beb7-ac727c7b2165",
+      "job_title": "مساعد المدير العام ومدير التدريب",
+      "organization": "أكاديمية برادايس الدولية للتدريب",
+      "date_from": "01/2026",
+      "date_to": "08/2026",
+      "sort_order": 1
+    },
+    {
+      "id": "6f9d8c43-e6c9-4079-8dcb-2deea63083e9",
+      "job_title": "رئيس قسم الموارد البشرية",
+      "organization": "شركة العرب للإنشاء والتعمير",
+      "date_from": "12/2021",
+      "date_to": "03/2022",
+      "sort_order": 2
+    },
+    {
+      "id": "add39462-b3c4-4750-95c5-8bd798f69cef",
+      "job_title": "مسؤول قسم التدريب — منطقة المدينة المنورة",
+      "organization": "ماكسيموس الخليج (أحد مشغلين برنامج طاقات )",
+      "date_from": "11/2014",
+      "date_to": "03/2020",
+      "sort_order": 3
+    },
+    {
+      "id": "0245eaa2-75ca-4bee-bf19-1cb7f493e3cc",
+      "job_title": "أخصائي عمليات موارد بشرية",
+      "organization": "فنادق ومنتجعات أوبيروي",
+      "date_from": "09/2022",
+      "date_to": "12/2025",
+      "sort_order": 4
+    },
+    {
+      "id": "94158ba2-8a23-48fe-930b-bd8bbe64b22d",
+      "job_title": "مدير تطوير أعمال (عقد استشاري)",
+      "organization": "عيادة أطباء العصر البيطرية",
+      "date_from": "08/2021",
+      "date_to": "11/2021",
+      "sort_order": 5
+    },
+    {
+      "id": "fabefcc2-956d-4602-8e63-2936d5aec3f9",
+      "job_title": "أخصائي موارد بشرية",
+      "organization": "فنادق مادن",
+      "date_from": "04/2022",
+      "date_to": "08/2022",
+      "sort_order": 6
+    },
+    {
+      "id": "3c73b3de-76ca-4632-b001-1e07f0f5744e",
+      "job_title": "مدرب مطاعم",
+      "organization": "تطبيق وصل",
+      "date_from": "02/2021",
+      "date_to": "08/2021",
+      "sort_order": 7
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "7a2cb91f-018f-4762-8463-a6c210c26c18",
+      "title": "محترف أعمال معتمد في القيادة (CBP-Leadership)",
+      "organization": "International Business Training Association (IBTA)",
+      "year": 2025,
+      "hours": null,
+      "asset": "/api/preview/7a2cb91f-018f-4762-8463-a6c210c26c18",
+      "asset_type": "image",
+      "sort_order": 1
+    },
+    {
+      "id": "9bb2e113-4919-49cf-8b92-208d729ee6bd",
+      "title": "مستشار تدريبي معتمد - مستوى ممارس",
+      "organization": "معهد الاستشارات والتدريب",
+      "year": null,
+      "hours": 50,
+      "asset": "/api/preview/9bb2e113-4919-49cf-8b92-208d729ee6bd",
+      "asset_type": "image",
+      "sort_order": 2
+    },
+    {
+      "id": "e901476d-f95f-481a-b2d3-f281d22b3d1e",
+      "title": "دبلوم التدريب الإلكتروني والمباشر الاحترافي",
+      "organization": "المركز الكندي العالمي للاستشارات والتدريب",
+      "year": 2013,
+      "hours": 70,
+      "asset": "/api/preview/e901476d-f95f-481a-b2d3-f281d22b3d1e",
+      "asset_type": "image",
+      "sort_order": 3
+    },
+    {
+      "id": "6d192bba-78ee-4e23-bd6b-059f42fcdd4f",
+      "title": "تدريب المدربين - ToT",
+      "organization": "المركز الكندي العالمي للاستشارات والتدريب",
+      "year": 2015,
+      "hours": 50,
+      "asset": "/api/preview/6d192bba-78ee-4e23-bd6b-059f42fcdd4f",
+      "asset_type": "image",
+      "sort_order": 4
+    },
+    {
+      "id": "0cc216f5-6d01-418c-a021-e6c522f6b19f",
+      "title": "إدارة الموارد البشرية",
+      "organization": "معهد شبكة الأعمال الخليجية للتدريب",
+      "year": 2017,
+      "hours": 50,
+      "asset": "/api/preview/0cc216f5-6d01-418c-a021-e6c522f6b19f",
+      "asset_type": "image",
+      "sort_order": 5
+    },
+    {
+      "id": "23a14a9c-f488-46a3-a594-9d3e5d547731",
+      "title": "دبلوم إدارة الموارد البشرية",
+      "organization": "يوديمي (Udemy)",
+      "year": 2024,
+      "hours": 16,
+      "asset": "/api/preview/23a14a9c-f488-46a3-a594-9d3e5d547731",
+      "asset_type": "image",
+      "sort_order": 6
+    },
+    {
+      "id": "f6d16fb0-8fa8-4409-9c66-a9fda9e7481b",
+      "title": "إدارة الحالات",
+      "organization": "شركة ماكسيموس الخليج",
+      "year": 2016,
+      "hours": 18,
+      "asset": "/api/preview/f6d16fb0-8fa8-4409-9c66-a9fda9e7481b",
+      "asset_type": "image",
+      "sort_order": 7
+    },
+    {
+      "id": "e0c14cc5-1b65-4cd3-9c72-93d8925aa34a",
+      "title": "تحليل البيانات وذكاء الأعمال وأدوات الذكاء الاصطناعي",
+      "organization": "ثراء للتدريب - معتمد من المؤسسة العامة للتدريب المهني والتقني",
+      "year": 2025,
+      "hours": 60,
+      "asset": "/api/preview/e0c14cc5-1b65-4cd3-9c72-93d8925aa34a",
+      "asset_type": "image",
+      "sort_order": 8
+    },
+    {
+      "id": "1472dd7a-b20c-4f18-b326-7581a76bc6dd",
+      "title": "وقّاد الابتكار - استكشاف نماذج وأدوات الذكاء الاصطناعي في التعليم",
+      "organization": "جامعة الملك خالد",
+      "year": 2025,
+      "hours": 10,
+      "asset": "/api/preview/1472dd7a-b20c-4f18-b326-7581a76bc6dd",
+      "asset_type": "image",
+      "sort_order": 9
+    },
+    {
+      "id": "91ef0018-092f-498d-abb2-ad3ad2a4ce56",
+      "title": "العمل الذكي بأدوات الذكاء الاصطناعي",
+      "organization": "LevelX Academy",
+      "year": 2025,
+      "hours": null,
+      "asset": "/api/preview/91ef0018-092f-498d-abb2-ad3ad2a4ce56",
+      "asset_type": "image",
+      "sort_order": 10
+    }
+  ],
+  "certificates": [
+    {
+      "id": "766a8870-368e-4208-9872-5591259aabd3",
+      "title": "شهادة شكر وتقدير على اقامة دورة اخلاقيات العمل",
+      "organization": "مكتب الضمان الاجتماعي في الأحساء",
+      "year": 2019,
+      "asset": "/api/preview/766a8870-368e-4208-9872-5591259aabd3",
+      "asset_type": "image",
+      "sort_order": 1782517370
+    },
+    {
+      "id": "b34f71db-d80c-4e57-b3dc-bb3787e32435",
+      "title": "شكر وتقدير لتقديم محاضرات تحفيزية لمتدربي الكلية",
+      "organization": "الكلية التقنية والمعهد الصناعي في العلا",
+      "year": 2015,
+      "asset": "/api/preview/b34f71db-d80c-4e57-b3dc-bb3787e32435",
+      "asset_type": "image",
+      "sort_order": 1782517439
+    },
+    {
+      "id": "a2461751-2b81-48b7-b051-4223da8f6341",
+      "title": "شكر وتقدير على تدريب الموظفين على مهارات التواصل وتحليل الأنماط",
+      "organization": "فندق سجى المدينة",
+      "year": null,
+      "asset": "/api/preview/a2461751-2b81-48b7-b051-4223da8f6341",
+      "asset_type": "image",
+      "sort_order": 1782519518
+    },
+    {
+      "id": "1e6cc491-1383-4a54-a3f1-47df794a340b",
+      "title": "شكر وتقدير على تقديم دورة تحليل الشخصيات والتعامل معها",
+      "organization": "أكاديمية التدريب الشامل للتدريب والأستشارات",
+      "year": 2013,
+      "asset": "/api/preview/1e6cc491-1383-4a54-a3f1-47df794a340b",
+      "asset_type": "image",
+      "sort_order": 1782519641
+    },
+    {
+      "id": "72665d9f-d932-49a8-a4d7-3bc45bd53e70",
+      "title": "شكر وتقدير للعطاء العلمي والتقديم الأبداعي",
+      "organization": "فندق المدينة أراماس",
+      "year": null,
+      "asset": "/api/preview/72665d9f-d932-49a8-a4d7-3bc45bd53e70",
+      "asset_type": "image",
+      "sort_order": 1782519715
+    },
+    {
+      "id": "22dcd9d2-99f0-4cb0-a04b-d885c9ec757d",
+      "title": "شكر وتقدير لتقديم برنامج طاقات ( تنمية بشرية )",
+      "organization": "المعهد الصناعي الثانوي الأول بالمدينة المنورة",
+      "year": 2015,
+      "asset": "/api/preview/22dcd9d2-99f0-4cb0-a04b-d885c9ec757d",
+      "asset_type": "image",
+      "sort_order": 1782519867
+    },
+    {
+      "id": "0db61057-71f2-45cc-9d6b-67ae3ad32001",
+      "title": "شكر وتقدير لتقديم دورة تدريبية بعنوان ( تحليل الشخصيات وفن التعامل معها )",
+      "organization": "لجنة التنمية الأجتماعية بالمدينة المنورة",
+      "year": 2018,
+      "asset": "/api/preview/0db61057-71f2-45cc-9d6b-67ae3ad32001",
+      "asset_type": "image",
+      "sort_order": 1782520067
+    },
+    {
+      "id": "d9462c83-834c-4829-b014-f436db0ea640",
+      "title": "شكر وتقدير على المشاركة الفعالة في المشاريع والبرامج المقامة ( 1439-1440)",
+      "organization": "لجنة التنمية الأجتماعية شرق المدينة المنورة",
+      "year": 2019,
+      "asset": "/api/preview/d9462c83-834c-4829-b014-f436db0ea640",
+      "asset_type": "image",
+      "sort_order": 1782520196
+    },
+    {
+      "id": "6204babf-4e61-484d-93f4-4a729983a0b9",
+      "title": "شكر وتقدير  على تدريب المدربين",
+      "organization": "شركة ماكسيموس الخليج",
+      "year": null,
+      "asset": "/api/preview/6204babf-4e61-484d-93f4-4a729983a0b9",
+      "asset_type": "image",
+      "sort_order": 1782520297
+    },
+    {
+      "id": "1f3e8d06-d232-4779-a015-d51c1063a3ac",
+      "title": "شكر وتقدير  على تحقيق الهدف الشهري يونيو 2016",
+      "organization": "شركة ماكسيموس الخليج",
+      "year": 2016,
+      "asset": "/api/preview/1f3e8d06-d232-4779-a015-d51c1063a3ac",
+      "asset_type": "image",
+      "sort_order": 1782520515
+    },
+    {
+      "id": "19e25a38-0ff1-4ff2-8a63-b03a64e23137",
+      "title": "شكر وتقدير للتميز والإبداع في تقديم دورة الأمن والسلامة",
+      "organization": "شركة ماكسيموس الخليج",
+      "year": null,
+      "asset": "/api/preview/19e25a38-0ff1-4ff2-8a63-b03a64e23137",
+      "asset_type": "image",
+      "sort_order": 1782520636
+    },
+    {
+      "id": "7022518b-7cd1-4799-86af-b7628f96a692",
+      "title": "شكر وتقدير على إنجاح البرنامج الصيفي نادي طابة",
+      "organization": "وزارة التربية والتعليم",
+      "year": 2014,
+      "asset": "/api/preview/7022518b-7cd1-4799-86af-b7628f96a692",
+      "asset_type": "image",
+      "sort_order": 1782520823
+    },
+    {
+      "id": "2aade3fe-cc69-4198-8f77-872e0827d389",
+      "title": "شكر وتقدير على التعاون في توظيفخريجي كلية السياحة والفندقة",
+      "organization": "كلية السياحة والفندقة بالمدينة المنورة",
+      "year": 2014,
+      "asset": "/api/preview/2aade3fe-cc69-4198-8f77-872e0827d389",
+      "asset_type": "image",
+      "sort_order": 1782520940
+    },
+    {
+      "id": "3b8b6bd8-dc2b-4da9-aa69-168fc4fd55ed",
+      "title": "شكر وتقدير على التطوع 90 ساعة",
+      "organization": "جمعية التطوع الخيرية فزعة",
+      "year": null,
+      "asset": "/api/preview/3b8b6bd8-dc2b-4da9-aa69-168fc4fd55ed",
+      "asset_type": "image",
+      "sort_order": 1782521019
+    },
+    {
+      "id": "9f41fa35-567c-4c6f-9b3f-bfc1666f2c85",
+      "title": "شكر وتقديم دورة السعادة والنجاح الى الأبد",
+      "organization": "أكاديمية التدريب الشامل للتدريب والأستشارات",
+      "year": 2014,
+      "asset": "/api/preview/9f41fa35-567c-4c6f-9b3f-bfc1666f2c85",
+      "asset_type": "image",
+      "sort_order": 1782521089
+    },
+    {
+      "id": "a7458e05-9be1-488e-ad94-169d66778e60",
+      "title": "شكر وتقدير على المساهمة الفعالة في إنجاح مبادرة توطين",
+      "organization": "أكاديمية برادايس الدولية للتدريب & جمعية ماجد بن عبدالعزيز للتنمية والخدمات الإجتماعية",
+      "year": 2024,
+      "asset": "/api/preview/a7458e05-9be1-488e-ad94-169d66778e60",
+      "asset_type": "image",
+      "sort_order": 1782522462
+    },
+    {
+      "id": "8b0986d0-9cbb-41fb-b636-7c3b52e5c1b0",
+      "title": "شكر وتقدير للمشاركة المميزة في إنجاح الفعالية الإرشادية التي أقيمت بحديقة الملك فهد في المدينة المنورة",
+      "organization": "فرع وزارة البيئة والمياه والزراعة بمنطة المدينة المنورة",
+      "year": 2021,
+      "asset": "/api/preview/8b0986d0-9cbb-41fb-b636-7c3b52e5c1b0",
+      "asset_type": "image",
+      "sort_order": 1782522616
+    },
+    {
+      "id": "d5341b89-4e96-4451-b46d-4e4df12a2417",
+      "title": "شكر وتقدير نظير الجهود المبذولة في لقاء مدراء الموارد البشرية",
+      "organization": "إدارة المعهد الصناعي الثانوي الأول بالمدينة المنورة  ممثلة في قسم ( التنسيق الوظيفي )",
+      "year": 2024,
+      "asset": "/api/preview/d5341b89-4e96-4451-b46d-4e4df12a2417",
+      "asset_type": "image",
+      "sort_order": 1782522799
+    },
+    {
+      "id": "235ebe16-c9d5-4678-a233-397d8bf8de83",
+      "title": "شكر وتقدير على المشاركة في الملتقى المهني الثامن  (3-2016) في جامعة الملك عبدالعزيز",
+      "organization": "عميد شؤون الطلاب في جامعة الملك عبدالعزيز",
+      "year": 2016,
+      "asset": "/api/preview/235ebe16-c9d5-4678-a233-397d8bf8de83",
+      "asset_type": "image",
+      "sort_order": 1782522951
+    },
+    {
+      "id": "198515b9-2371-4ac0-bcd4-26c1dae20b45",
+      "title": "موظف الشهر لقسم الموارد البشرية",
+      "organization": "فندق أوبروي المدينة",
+      "year": null,
+      "asset": "/api/preview/198515b9-2371-4ac0-bcd4-26c1dae20b45",
+      "asset_type": "image",
+      "sort_order": 1782523084
+    },
+    {
+      "id": "41dc74b7-0363-4207-a6fb-fda94ed4739e",
+      "title": "شكر وتقدير على المساهمة الفعالة في إنجاح مبادرة توطين (2025)",
+      "organization": "أكاديمية برادايس الدولية للتدريب & جمعية ماجد بن عبدالعزيز للتنمية والخدمات الإجتماعية",
+      "year": 2025,
+      "asset": "/api/preview/41dc74b7-0363-4207-a6fb-fda94ed4739e",
+      "asset_type": "image",
+      "sort_order": 1782523601
+    }
+  ],
+  "documents": [
+    {
+      "id": "df0c4a16-94f4-4f77-ac9e-e74c669b756a",
+      "title": "العلاقات العامة",
+      "details": "تنظيم التواصل المهني وبناء العلاقات مع أصحاب المصلحة، ودعم تنسيق المبادرات والفعاليات.",
+      "asset": "/api/preview/df0c4a16-94f4-4f77-ac9e-e74c669b756a",
+      "asset_type": "image",
+      "sort_order": 1
+    },
+    {
+      "id": "220e4551-c9e3-419f-aff2-ad64a5fc24b1",
+      "title": "إدارة وتنشيط المبيعات",
+      "details": "تطوير آليات متابعة المبيعات وتنظيم مهام الفريق وتحسين تجربة العميل.",
+      "sort_order": 2
+    },
+    {
+      "id": "fbf6cbf7-fcea-46e0-9520-a9f48e588221",
+      "title": "استقطاب المواهب الوظيفية",
+      "details": "دعم فرز المرشحين والتحضير للمقابلات وربط الاحتياج الوظيفي بالمهارات المطلوبة.",
+      "sort_order": 3
+    },
+    {
+      "id": "e9651acf-d36c-421e-b7db-e0781321885f",
+      "title": "ذكاء الأعمال",
+      "details": "تنظيم معلومات الأداء وإعداد مؤشرات وتقارير تساعد على متابعة التشغيل واتخاذ القرار.",
+      "sort_order": 4
+    },
+    {
+      "id": "91c0fa18-f07c-464f-b810-275c54b4d62c",
+      "title": "الإستشارات الإدارية",
+      "details": "مراجعة الإجراءات وتوزيع الأدوار واقتراح خطوات عملية لتحسين الأداء الإداري والتشغيلي.",
+      "sort_order": 5
+    }
+  ],
+  "customSections": [
+    {
+      "id": "9111e90c-5946-4bb5-afc8-44329e8d5d73",
+      "title": "الملف الشخصي PDF",
+      "intro": "",
+      "layout": "text",
+      "showInNav": true,
+      "enabled": true,
+      "sort_order": 1,
+      "items": [
+        {
+          "id": "656a2637-4f98-4bb8-b126-ad24eb5142c6",
+          "title": "ملف PDF",
+          "body": "ائاااتؤءياتءؤياتؤءياتؤءياتيؤءاتيؤءات",
+          "image": null,
+          "url": "",
+          "linkLabel": "اعرف المزيد"
+        }
+      ]
+    }
+  ],
+  "groupConsultations": {
+    "enabled": true,
+    "title": "الاستشارات الإدارية الجماعية",
+    "intro": "جلسات حوار مهني موجّهة تجمع أصحاب الأعمال والمديرين وفرق العمل لمناقشة تحدياتهم الإدارية، وتبادل الخبرات، وبناء توصيات عملية تناسب واقع العمل.",
+    "audience": "لأصحاب المنشآت، والمديرين والمشرفين، ومسؤولي الموارد البشرية وفرق العمل.",
+    "topics": [
+      {
+        "id": "operations",
+        "title": "أنظمة العمل والتشغيل",
+        "description": "مراجعة الإجراءات وتوزيع الأدوار، وتحديد نقاط التعثر، ومناقشة مؤشرات الأداء وفرص تحسين سير العمل."
+      },
+      {
+        "id": "people",
+        "title": "الموارد البشرية وتطوير الفرق",
+        "description": "مناقشة الاستقطاب والتهيئة الوظيفية، وتطوير المهارات، وتحسين التواصل ومتابعة أداء الفريق."
+      },
+      {
+        "id": "leadership",
+        "title": "القيادة وحل التحديات الإدارية",
+        "description": "تحليل المواقف الإدارية، وترتيب الأولويات، ودعم اتخاذ القرار، وتبادل وجهات النظر للوصول إلى حلول قابلة للتطبيق."
+      }
+    ],
+    "format": "عن بُعد أو حضوريًا، بحسب الاتفاق واحتياج المجموعة.",
+    "duration": "تُحدد بحسب المحور، وحجم المجموعة، ونطاق النقاش.",
+    "pricing": "تُحدد التكلفة بعد فهم الاحتياج والاتفاق على نطاق الجلسة.",
+    "outcomes": [
+      "فهم أوضح للتحدّي وأسبابه المحتملة.",
+      "توصيات عملية وأولويات محددة للتحسين.",
+      "خطوات مقترحة يمكن للمجموعة متابعتها بعد الجلسة."
+    ],
+    "steps": [
+      {
+        "title": "شاركنا الاحتياج",
+        "description": "حدّد المحور والتحدّي الإداري وعدد المشاركين التقريبي عند التواصل."
+      },
+      {
+        "title": "ننسّق التفاصيل",
+        "description": "نتفق على نطاق الجلسة، وطريقة تقديمها، والموعد، والمدة والتكلفة."
+      },
+      {
+        "title": "نناقش ونحدّد الخطوات",
+        "description": "نستعرض الحالة، ونناقش البدائل، ونرتّب التوصيات والأولويات العملية."
+      }
+    ],
+    "ctaLabel": "اطلب تنسيق جلسة جماعية",
+    "confirmationNote": "يُؤكد الموعد والتكلفة بعد التواصل والاتفاق. يرجى عدم إدراج معلومات سرية في وصف التحدّي."
+  },
+  "services": [
+    {
+      "id": "166b323a-a5fc-4b2b-8b5a-318fce751214",
+      "title": "تحليل الشخصية المهنية مع بناء السيرة الذاتية",
+      "description": "يتم تقييم وتحليل الشخصية ودمجها مع الخبرات وتصميم CV فعلاً مطلوب ويمثل الشخص فعلاً بكامل قدراته ومهاراته حيث يتم التنسيق على موعد مع العميل يتم فيها مناقشته وعمل تحليل الشخصية والمهنة",
+      "category": "individuals",
+      "price": "100 ريال",
+      "order_url": "",
+      "sort_order": 1782884663
+    },
+    {
+      "id": "5d60c98b-3e8b-4997-b9d5-bb0a78a0cd91",
+      "title": "بناء أنظمة وعمليات التشغيل",
+      "description": "نساعد المؤسسات على بناء أنظمة تشغيل فعّالة من خلال توثيق السياسات والإجراءات، وتصميم مؤشرات الأداء، ورقمنة سير العمل — لتحويل بيئة العمل من الاجتهاد الفردي إلى منظومة مؤسسية مستدامة وقابلة للتطوير.",
+      "category": "corporate",
+      "price": "حسب الاتفاق",
+      "order_url": "",
+      "sort_order": 1782978154
+    },
+    {
+      "id": "13ed35f4-236f-4933-afa7-db789df0af5f",
+      "title": "كوتشينج إستشاري فردي للموظفين والباحثين عن عمل",
+      "description": "جلسات كوتشينج فردية مصممة خصيصاً لاحتياج كل موظف أو باحث عن عمل — سواء في تطوير المهارات المهنية، وضوح المسار الوظيفي، تعزيز الثقة بالنفس، أو الاستعداد للمقابلات.",
+      "category": "individuals",
+      "price": "150 ريال",
+      "order_url": "",
+      "sort_order": 1782978514
+    },
+    {
+      "id": "management-consulting",
+      "title": "الاستشارات الإدارية",
+      "description": "مناقشة التحديات الإدارية، ومراجعة الإجراءات والأدوار ومؤشرات الأداء، وتحديد خطوات عملية تناسب احتياج المؤسسة بالاستناد إلى خبرتي في الموارد البشرية وتطوير الأعمال والتشغيل.",
+      "category": "corporate",
+      "price": "حسب نطاق العمل",
+      "order_url": "",
+      "sort_order": 4
+    },
+    {
+      "id": "group-management-consulting",
+      "title": "الاستشارات الإدارية الجماعية",
+      "description": "جلسات نقاش موجهة للفرق ومجموعات العمل حول تحديات الإدارة والتواصل وتوزيع المسؤوليات، للخروج بأولويات وتوصيات قابلة للتطبيق.",
+      "category": "corporate",
+      "price": "يُحدد بعد مناقشة الاحتياج",
+      "order_url": "",
+      "sort_order": 5
+    }
+  ],
+  "contact": {
+    "email": "CT.leader9z@gmail.com",
+    "whatsapp": "966562276020",
+    "raed": "https://raed.com.sa/public-profile/c0807b7b-2876-4fe0-bd4a-b0ee8396ba93"
+  },
+  "brand": {
+    "logo": "/api/preview/brand-logo",
+    "dark": "#432a19",
+    "accent": "#a64d0b",
+    "highlight": "#ff8b00",
+    "background": "#fffaf3"
+  },
+  "presentation": {
+    "header": {
+      "title": "مهند سلامة",
+      "subtitle": "الملف المهني",
+      "enabled": true,
+      "showLogo": true,
+      "links": [],
+      "showNav": true,
+      "moreLabel": "المزيد",
+      "navOrder": [],
+      "navTargets": {}
+    },
+    "footer": {
+      "enabled": true,
+      "title": "مهند عبدالله سلامة",
+      "subtitle": "الملف المهني",
+      "description": "الخبرات · المؤهلات · الإنجازات · الخدمات",
+      "links": [
+        {
+          "id": "raed-footer",
+          "label": "ملفي على رائد",
+          "url": "https://raed.com.sa/public-profile/c0807b7b-2876-4fe0-bd4a-b0ee8396ba93",
+          "enabled": true
+        }
+      ]
+    },
+    "hero": {
+      "eyebrow": "التدريب والتطوير · الموارد البشرية · الأعمال",
+      "primaryLabel": "استكشف شهاداتي",
+      "primaryUrl": "#credentials",
+      "secondaryLabel": "تعرّف على رحلتي",
+      "secondaryUrl": "#experience",
+      "note": "تطوير الأفراد.\nوتمكين الأعمال.",
+      "portraitTop": "MAS / PORTFOLIO",
+      "portraitCaption": "شغف بالتطوير، وخبرة في التنفيذ",
+      "portraitQuote": "الإنسان أولاً، والأثر دائماً.",
+      "floatLabel": "عامًا من الخبرة\nفي التدريب والأعمال",
+      "qualificationTitle": "CBP – Leadership",
+      "qualificationSubtitle": "محترف أعمال معتمد في القيادة",
+      "showStats": true,
+      "showPortrait": true,
+      "showQualification": true,
+      "showExperienceBadge": true
+    },
+    "membership": {
+      "enabled": true,
+      "title": "رائد موثوق",
+      "subtitle": "عضوية مهنية في منصة رائد",
+      "cardTitle": "بطاقة الاستشارات الإدارية",
+      "description": "تقديم الاستشارات الإدارية بالاستناد إلى خبرتي في الموارد البشرية والتدريب وتطوير الأعمال وبناء عمليات التشغيل.",
+      "number": "FL-954127482",
+      "issueDate": "2018-04-13",
+      "expiryDate": "2027-06-22",
+      "image": "/api/preview/raed-membership",
+      "linkLabel": "استعرض ملفي على منصة رائد"
+    },
+    "experienceOrder": "manual",
+    "credentialOrder": "original",
+    "sections": [
+      {
+        "id": "home",
+        "label": "نبذة عني",
+        "eyebrow": "",
+        "title": "",
+        "intro": "",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "membership",
+        "label": "رائد وموثوق",
+        "eyebrow": "انتماء مهني",
+        "title": "عضوية موثوق والاستشارات الإدارية",
+        "intro": "بطاقتي المهنية ورابط ملفي في منصة رائد.",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "experience",
+        "label": "الخبرات العملية",
+        "eyebrow": "المسيرة المهنية",
+        "title": "خبرات تصنع الفارق.",
+        "intro": "رحلة مهنية تجمع التدريب والموارد البشرية وتطوير الأعمال.",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "credentials",
+        "label": "الشهادات والمؤهلات",
+        "eyebrow": "التعلّم والإنجاز",
+        "title": "معرفة تتجدّد. وإنجازات تُوثّق.",
+        "intro": "مؤهلات مهنية وشهادات تقدير، ومجالات عمل حر تُعرض بمسمياتها والخدمات المرتبطة بها.",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "services",
+        "label": "الخدمات",
+        "eyebrow": "كيف أستطيع مساعدتك؟",
+        "title": "خبرة تتحوّل إلى حلول.",
+        "intro": "خدمات مهنية للأفراد، وحلول إدارية وتشغيلية وتطويرية للمؤسسات.",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "group-consultations",
+        "label": "الاستشارات الإدارية الجماعية",
+        "eyebrow": "نناقش التحدّي. ونبني الخطوات.",
+        "title": "الاستشارات الإدارية الجماعية",
+        "intro": "",
+        "enabled": true,
+        "showInNav": true
+      },
+      {
+        "id": "closing",
+        "label": "ختام الصفحة",
+        "eyebrow": "مسيرة مستمرة",
+        "title": "كل تجربة تضيف. وكل معرفة تفتح أفقًا.",
+        "intro": "",
+        "enabled": true,
+        "showInNav": false
+      }
+    ],
+    "copy": {
+      "experienceAsideTitle": "تنوّع في التجربة. وضوح في الأثر.",
+      "experienceAsideBody": "استكشف المسيرة حسب المجال، أو تصفّحها بالترتيب الذي يناسبك.",
+      "credentialHint": "اضغط على الشهادات لعرض التفاصيل",
+      "credentialNote": "المرفقات معاينات للعرض فقط. التواريخ بحسب البيانات المتاحة. مجالات العمل الحر تُعرض بمسمياتها والخدمات المرتبطة بها.",
+      "groupAsideTitle": "حوار مشترك. ورؤية أكثر وضوحًا.",
+      "groupAsideBody": "مساحة لمناقشة الحالة الإدارية والاستفادة من وجهات نظر متعددة.",
+      "groupTopicsLabel": "محاور يمكن مناقشتها",
+      "groupOutcomesTitle": "ماذا نهدف أن تحقق المجموعة؟",
+      "groupRequestEyebrow": "لنبدأ من احتياج مجموعتك",
+      "groupRequestTitle": "ما التحدّي الذي ترغبون في مناقشته؟",
+      "groupRequestBody": "اختر المحور، وأضف وصفًا مختصرًا لتسهيل تنسيق الجلسة."
+    }
+  }
+}

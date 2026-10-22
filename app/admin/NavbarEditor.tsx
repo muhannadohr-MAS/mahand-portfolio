@@ -1,0 +1,26 @@
+'use client';
+type Link={id:string;label:string;url:string;enabled:boolean};
+type Section={id:string;label:string;title:string;intro:string;eyebrow:string;enabled:boolean;showInNav:boolean};
+type Header={title:string;subtitle:string;enabled:boolean;showLogo:boolean;showNav?:boolean;moreLabel?:string;links:Link[];navOrder?:string[];navTargets?:Record<string,string>};
+type Presentation={header:Header;sections:Section[];[key:string]:any};
+type CustomSection={id:string;title:string;intro:string;enabled:boolean;showInNav:boolean};
+function Field({label,children,note}:{label:string;children:React.ReactNode;note?:string}){return <label className="admin-field"><span>{label}</span>{children}{note&&<small>{note}</small>}</label>;}
+const uid=()=>globalThis.crypto?.randomUUID?.()||'link-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
+export default function NavbarEditor({value,customSections,onChange}:{value:Presentation;customSections:CustomSection[];onChange:(value:Presentation)=>void}){
+ const header=value.header;
+ const sections=[...value.sections,...customSections.filter(s=>!value.sections.some(r=>r.id==='custom-'+s.id)).map(s=>({id:'custom-'+s.id,label:s.title,title:s.title,intro:s.intro,eyebrow:'',enabled:s.enabled,showInNav:s.showInNav}))];
+ const order=header.navOrder||[],rank=(id:string)=>{const i=order.indexOf(id);return i<0?order.length:i;};
+ const items=[...sections.map(row=>({id:'section-'+row.id,sectionId:row.id,label:row.label,url:header.navTargets?.[row.id]||'#'+(row.id==='home'?'about':row.id),enabled:row.showInNav,sectionVisible:row.enabled})),...header.links.map(link=>({...link,id:'link-'+link.id,linkId:link.id,sectionVisible:true}))].sort((a,b)=>rank(a.id)-rank(b.id));
+ const changeHeader=(fields:Partial<Header>)=>onChange({...value,header:{...header,...fields}});
+ const changeItem=(index:number,fields:Partial<Link>)=>{
+  const item=items[index];
+  if('sectionId' in item){
+   const nextSections=sections.map(row=>row.id===item.sectionId?{...row,...(fields.label!==undefined?{label:fields.label}:{}),...(fields.enabled!==undefined?{showInNav:fields.enabled}:{})}:row);
+   onChange({...value,sections:nextSections,header:{...header,navTargets:fields.url!==undefined?{...header.navTargets,[item.sectionId]:fields.url}:header.navTargets}});
+  }else changeHeader({links:header.links.map(link=>link.id===item.linkId?{...link,...fields}:link)});
+ };
+ const move=(index:number,offset:number)=>{const next=items.map(item=>item.id);[next[index],next[index+offset]]=[next[index+offset],next[index]];changeHeader({navOrder:next});};
+ return <div className="navbar-editor"><section className="admin-panel"><h2>الناف بار — روابط التنقل</h2><p className="admin-help">تظهر الروابط مباشرة ما دامت المساحة تكفي، وينتقل الزائد فقط إلى «{header.moreLabel||'المزيد'}». على الجوال تظهر الروابط بالترتيب نفسه داخل قائمة التنقل.</p><label className="admin-toggle"><input type="checkbox" checked={header.showNav!==false} onChange={e=>changeHeader({showNav:e.target.checked})}/><span>إظهار الناف بار</span></label><Field label="اسم قائمة الروابط الزائدة"><input maxLength={500} value={header.moreLabel||'المزيد'} onChange={e=>changeHeader({moreLabel:e.target.value})}/></Field><div className="record-actions"><button type="button" className="button secondary" disabled={header.links.length>=30} onClick={()=>{const id=uid();changeHeader({links:[...header.links,{id,label:'رابط جديد',url:'',enabled:true}],navOrder:[...items.map(item=>item.id),'link-'+id]});}}>+ إضافة رابط للناف بار</button><button type="button" disabled={!order.length} onClick={()=>changeHeader({navOrder:[]})}>اتباع ترتيب أقسام الصفحة</button></div><p className="admin-help">تغيير ترتيب الروابط هنا مستقل عن ترتيب الأقسام في الصفحة. إخفاء رابط لا يخفي محتوى القسم.</p></section>
+ {items.map((item,index)=><section className="settings-link" key={item.id}><div className="navbar-row-title"><span className="record-index">{String(index+1).padStart(2,'0')}</span><strong>{item.label}</strong><small>{'sectionId' in item?'رابط قسم':'رابط إضافي'}</small></div><div className="admin-form-grid"><Field label={`اسم الرابط ${index+1}`}><input maxLength={500} value={item.label} onChange={e=>changeItem(index,{label:e.target.value})}/></Field><Field label={`وجهة الرابط ${index+1}`} note="رابط قسم مثل #services أو رابط يبدأ بـ https://"><input maxLength={1500} dir="ltr" value={item.url} onChange={e=>changeItem(index,{url:e.target.value})}/></Field></div><label className="admin-toggle"><input type="checkbox" checked={item.enabled} onChange={e=>changeItem(index,{enabled:e.target.checked})}/><span>إظهار «{item.label}» في الناف بار</span></label>{!item.sectionVisible&&<p className="navbar-status">هذا القسم مخفي من الموقع، لذلك لن يظهر رابطه حتى تُظهر القسم.</p>}<div className="record-actions"><button type="button" disabled={index===0} onClick={()=>move(index,-1)}>↑ تقديم الرابط</button><button type="button" disabled={index===items.length-1} onClick={()=>move(index,1)}>↓ تأخير الرابط</button>{'linkId' in item?<button type="button" className="subtle-danger" onClick={()=>changeHeader({links:header.links.filter(link=>link.id!==item.linkId),navOrder:order.filter(id=>id!==item.id)})}>حذف الرابط</button>:<button type="button" onClick={()=>changeItem(index,{enabled:false})}>إخفاء من الناف بار</button>}</div></section>)}
+ </div>;
+}
