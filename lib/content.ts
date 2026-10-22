@@ -27,5 +27,5 @@ export async function getContent(){
  return {content:{...content,documents,services:[...content.services,...extra],presentation:mergePresentation(content.presentation),groupConsultations:content.groupConsultations??seed.groupConsultations,customSections:content.customSections??[]},version:state.version,updatedAt:state.updatedAt};
 }
 export async function authorizeAdmin(request?:Request){return (await readAdminSession(request))?.user||null;}
-export function guardWrite(request:Request){if(request.headers.get('x-portfolio-admin')!=='1')return false;const origin=request.headers.get('origin');return !origin||origin===new URL(request.url).origin;}
+export function guardWrite(request:Request){if(request.headers.get('x-portfolio-admin')!=='1')return false;if(request.headers.get('sec-fetch-site')==='cross-site')return false;const origin=request.headers.get('origin');return !!origin&&origin===new URL(request.url).origin;}
 export const privateHeaders={'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'};
