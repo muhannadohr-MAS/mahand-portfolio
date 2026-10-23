@@ -65,7 +65,8 @@ function showError(){
 }
 async function init(){
  try{
-  const response=await fetch('/api/content');if(!response.ok)throw new Error('Portfolio unavailable');portfolio=await response.json();
+  const initial=document.getElementById('portfolio-data');
+  if(initial){portfolio=JSON.parse(initial.textContent);}else{const response=await fetch('/api/content');if(!response.ok)throw new Error('Portfolio unavailable');portfolio=await response.json();}
   credentials=['qualifications','certificates','documents'].flatMap(category=>(portfolio[category]||[]).map(item=>({...item,title:cleanArabic(item.title),organization:cleanArabic(item.organization),category}))).map((item,originalIndex)=>({...item,originalIndex}));
   const profile=portfolio.profile?.[0];if(profile){$('#heroRole').textContent=profile.job_title;$('#heroBio').textContent=profile.bio; const heading=$('.hero h1');const words=profile.full_name.split(' ');heading.innerHTML=words.length>1?text(words.slice(0,-1).join(' '))+'<br><span>'+text(words.at(-1))+'</span><i aria-hidden="true">.</i>':text(profile.full_name); const img=$('.portrait-window img');if(profile.avatar_url)img.src=profile.avatar_url;const stats=$$('.stats-strip>div');[1,2,3].forEach(n=>{stats[n-1].querySelector('strong').textContent=profile['stat'+n+'_value'];stats[n-1].querySelector('span').textContent=profile['stat'+n+'_label'];});const float=$('.experience-float>strong');float.textContent=profile.stat1_value;}
   applyBrand();renderServices();renderGroupConsultations();renderCustomSections();renderMembership();renderPresentation();
