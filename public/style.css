@@ -32,9 +32,9 @@
 .supabase-login{max-width:620px}.supabase-login form{width:100%;text-align:right}.supabase-login fieldset{border:0;padding:0;margin:0}.supabase-login .button{width:100%}.supabase-login h1{font-size:36px}.admin-first-setup{width:100%;border-top:1px solid #decbb4;padding-top:20px}.admin-first-setup p{font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 16px}.admin-signout{border:0;background:none;padding:0;font-size:11px;cursor:pointer;color:var(--teal);margin-top:18px}
 
 /* Full rectangular portrait, retaining the surrounding hero content. */
-.portrait-card{height:auto;min-height:0;border-radius:0;padding:22px 24px 90px}
+.portrait-card{height:auto;min-height:0;border-radius:0;padding:22px 24px 112px}
 .portrait-window{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:4/5;border-radius:0;outline:none;background:transparent}
 .portrait-window img{position:static;display:block;width:100%;height:100%;object-fit:contain}
 .portrait-orbit{display:none}
 .profile-card-top{position:relative;inset:auto;margin-bottom:16px}
-@media(max-width:600px){.portrait-card{padding:18px 18px 82px;border-radius:0}}
+@media(max-width:600px){.portrait-card{padding:18px 18px 104px;border-radius:0}}
