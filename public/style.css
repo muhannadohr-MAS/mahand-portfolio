@@ -30,3 +30,11 @@
 .site-header .desktop-nav{flex:1 1 0;min-width:0;align-items:center;justify-content:center;white-space:nowrap;gap:22px}.site-header .desktop-nav>a,.site-header .desktop-nav>.more-nav{flex:0 0 auto}.site-header .desktop-nav>.more-nav{font-size:inherit}.site-header .desktop-nav .more-nav>div{max-width:min(320px,calc(100vw - 32px));width:280px}.site-header .nav-wrap>.brand,.site-header .nav-wrap>.private-badge{flex-shrink:0}.site-header.nav-compact .desktop-nav{display:none}.site-header.nav-compact .menu-button{display:inline-flex!important}.site-header.nav-compact .private-badge{margin-right:auto}.site-header.navigation-disabled .desktop-nav,.site-header.navigation-disabled #mobileNav,.site-header.navigation-disabled .menu-button{display:none!important}.navbar-editor .settings-link{background:#fffdf9}.navbar-row-title{display:flex;gap:12px;align-items:center;margin-bottom:20px}.navbar-row-title strong{font-size:17px}.navbar-row-title small{margin-right:auto;color:#8a7058;font-size:11px}.navbar-editor .admin-toggle{margin:0}.navbar-editor .record-actions{flex-wrap:wrap}.navbar-status{font-size:12px;color:#92795d;margin:10px 0 18px;line-height:1.8}
 @media(min-width:921px) and (max-width:1100px){.site-header .nav-wrap{gap:20px}.site-header .desktop-nav{gap:18px}}
 .supabase-login{max-width:620px}.supabase-login form{width:100%;text-align:right}.supabase-login fieldset{border:0;padding:0;margin:0}.supabase-login .button{width:100%}.supabase-login h1{font-size:36px}.admin-first-setup{width:100%;border-top:1px solid #decbb4;padding-top:20px}.admin-first-setup p{font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 16px}.admin-signout{border:0;background:none;padding:0;font-size:11px;cursor:pointer;color:var(--teal);margin-top:18px}
+
+/* Full rectangular portrait, retaining the surrounding hero content. */
+.portrait-card{height:auto;min-height:0;border-radius:0;padding:22px 24px 90px}
+.portrait-window{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:4/5;border-radius:0;outline:none;background:transparent}
+.portrait-window img{position:static;display:block;width:100%;height:100%;object-fit:contain}
+.portrait-orbit{display:none}
+.profile-card-top{position:relative;inset:auto;margin-bottom:16px}
+@media(max-width:600px){.portrait-card{padding:18px 18px 82px;border-radius:0}}
