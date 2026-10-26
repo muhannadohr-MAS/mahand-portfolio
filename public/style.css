@@ -45,5 +45,5 @@
 .portrait-social-links a{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid #d9c9b8;border-radius:50%;background:var(--cream,#fffaf3);color:var(--navy,#432a19);box-shadow:0 3px 10px #432a190a;transition:color .18s,border-color .18s}
 .portrait-social-links a:hover{color:var(--teal,#a64d0b);border-color:currentColor}
 .portrait-social-links a:focus-visible{outline:3px solid var(--teal,#a64d0b);outline-offset:3px}
-.portrait-social-links svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-@media(max-width:600px){.portrait-social-links{inset-inline-end:-32px;top:94px;gap:7px}.portrait-social-links a{width:36px;height:36px}.portrait-social-links svg{width:18px;height:18px}}
+.portrait-social-links svg{width:23px;height:23px;fill:currentColor;stroke:none}
+@media(max-width:600px){.portrait-social-links{inset-inline-end:-32px;top:94px;gap:7px}.portrait-social-links a{width:36px;height:36px}.portrait-social-links svg{width:21px;height:21px}}
