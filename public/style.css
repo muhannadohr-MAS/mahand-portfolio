@@ -38,3 +38,12 @@
 .portrait-orbit{display:none}
 .profile-card-top{position:relative;inset:auto;margin-bottom:16px}
 @media(max-width:600px){.portrait-card{padding:18px 18px 104px;border-radius:0}}
+
+/* Social links: isolated vertical rail; the existing hero layout is unchanged. */
+.hero-visual{position:relative}
+.portrait-social-links{position:absolute;inset-inline-end:-54px;top:110px;display:flex;flex-direction:column;gap:9px;z-index:3;max-height:calc(100% - 160px);overflow-y:auto;scrollbar-width:none}
+.portrait-social-links a{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid #d9c9b8;border-radius:50%;background:var(--cream,#fffaf3);color:var(--navy,#432a19);box-shadow:0 3px 10px #432a190a;transition:color .18s,border-color .18s}
+.portrait-social-links a:hover{color:var(--teal,#a64d0b);border-color:currentColor}
+.portrait-social-links a:focus-visible{outline:3px solid var(--teal,#a64d0b);outline-offset:3px}
+.portrait-social-links svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:600px){.portrait-social-links{inset-inline-end:-32px;top:94px;gap:7px}.portrait-social-links a{width:36px;height:36px}.portrait-social-links svg{width:18px;height:18px}}

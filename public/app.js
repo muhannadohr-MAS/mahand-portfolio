@@ -63,13 +63,41 @@ function showError(){
  $('#experienceList').innerHTML='<p class="loading-message">تعذر تحميل البيانات. أعد تحميل الصفحة للمحاولة مرة أخرى.</p>';
  $('#resultsCount').textContent='تعذر تحميل الشهادات. أعد تحميل الصفحة للمحاولة مرة أخرى.';
 }
+
+function renderSocialLinks(){
+ document.getElementById('portraitSocialLinks')?.remove();
+ const social=portfolio.presentation?.social;
+ const host=document.querySelector('.hero-visual');
+ if(!host||!social?.enabled||portfolio.presentation?.hero?.showPortrait===false)return;
+ const paths={
+ linkedin:'M6 9v12M6 5v.01M10 21V9h4v2c1-3 7-3 7 2v8M14 21v-7',
+ x:'M4 3h4l12 18h-4L4 3ZM20 3 4 21',
+ instagram:'M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4ZM16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM17.5 6.5h.01',
+ facebook:'M14 21v-9h3l.5-4H14V6c0-1 .5-2 2-2h2V1h-3c-3 0-5 2-5 5v2H7v4h3v9',
+ youtube:'M9 8l7 4-7 4V8ZM7 4h10c4 0 5 1 5 8s-1 8-5 8H7c-4 0-5-1-5-8s1-8 5-8Z',
+ tiktok:'M14 3v12a5 5 0 1 1-4-5M14 3c1 4 3 5 7 5',
+ snapchat:'M12 3c-4 0-5 3-5 6v3c-1 2-3 3-4 3 0 2 3 2 4 3l1 2 4-1 4 1 1-2c1-1 4-1 4-3-1 0-3-1-4-3V9c0-3-1-6-5-6Z',
+ whatsapp:'M5 19l-2 3 5-1a9 9 0 1 0-3-2ZM8 7c0 5 4 9 9 9l1-3-3-1-1 1-3-3 1-1-1-3-3 1Z',
+ telegram:'M2 10 22 3l-4 18-6-5-4 4 1-7 9-7-12 6-4-2Z',
+ website:'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3 12h18M12 3c-5 5-5 13 0 18 5-5 5-13 0-18Z'};
+ const nav=document.createElement('nav');nav.id='portraitSocialLinks';nav.className='portrait-social-links';nav.setAttribute('aria-label','وسائل التواصل الاجتماعي');
+ for(const link of social.links||[]){
+  if(!link.enabled||!link.url)continue;
+  let url;try{url=new URL(link.url);if(url.protocol!=='https:'||url.username||url.password)continue;}catch{continue;}
+  const a=document.createElement('a');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';a.title=link.label;a.setAttribute('aria-label',link.label+' — يفتح في نافذة جديدة');
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');
+  const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d',paths[link.platform]||paths.website);svg.append(path);a.append(svg);nav.append(a);
+ }
+ if(nav.childElementCount)host.append(nav);
+}
+
 async function init(){
  try{
   const initial=document.getElementById('portfolio-data');
   if(initial){portfolio=JSON.parse(initial.textContent);}else{const response=await fetch('/api/content');if(!response.ok)throw new Error('Portfolio unavailable');portfolio=await response.json();}
   credentials=['qualifications','certificates','documents'].flatMap(category=>(portfolio[category]||[]).map(item=>({...item,title:cleanArabic(item.title),organization:cleanArabic(item.organization),category}))).map((item,originalIndex)=>({...item,originalIndex}));
   const profile=portfolio.profile?.[0];if(profile){$('#heroRole').textContent=profile.job_title;$('#heroBio').textContent=profile.bio; const heading=$('.hero h1');const words=profile.full_name.split(' ');heading.innerHTML=words.length>1?text(words.slice(0,-1).join(' '))+'<br><span>'+text(words.at(-1))+'</span><i aria-hidden="true">.</i>':text(profile.full_name); const img=$('.portrait-window img');if(profile.avatar_url)img.src=profile.avatar_url==='/api/preview/a31f4c87-fa46-4e0b-ae60-01503670014d'?'/assets/muhannad-portrait.webp':profile.avatar_url;const stats=$$('.stats-strip>div');[1,2,3].forEach(n=>{stats[n-1].querySelector('strong').textContent=profile['stat'+n+'_value'];stats[n-1].querySelector('span').textContent=profile['stat'+n+'_label'];});const float=$('.experience-float>strong');float.textContent=profile.stat1_value;}
-  applyBrand();renderServices();renderGroupConsultations();renderCustomSections();renderMembership();renderPresentation();
+  renderSocialLinks();applyBrand();renderServices();renderGroupConsultations();renderCustomSections();renderMembership();renderPresentation();
   const counts=[...$$('.stats-strip strong')];counts[3].textContent=portfolio.certificates.length;$('.count-label strong').textContent=String(portfolio.experiences.length).padStart(2,'0');
   $('#totalCredentials').textContent=credentials.length;
   $$('.credential-filters button').forEach(btn=>{btn.querySelector('span').textContent=btn.dataset.type==='all'?credentials.length:portfolio[btn.dataset.type].length;});
