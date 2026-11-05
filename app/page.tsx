@@ -1,18 +1,11 @@
 import home from '../data/home.json';
-import {getContent} from '../lib/content';
-export const dynamic='force-dynamic';
+import {getPublishedContent} from '../lib/public-content';
+export const revalidate=300;
 
 // Only the same published fields returned by /api/content may enter the HTML.
-function publishedContent(content:any){
- const result:any={...content};
- for(const key of ['experiences','qualifications','certificates','documents','services'])result[key]=(result[key]??[]).filter((row:any)=>row.enabled!==false);
- result.documents=result.documents.map(({asset,asset_type,...row}:any)=>row);
- result.customSections=(result.customSections??[]).filter((section:any)=>section.enabled).map((section:any)=>({...section,items:section.items.filter((item:any)=>item.enabled!==false)}));
- return result;
-}
 export default async function Home(){
- let content:any=null;
- try{content=publishedContent((await getContent()).content);}catch{}
+ // A failed refresh must not replace a good cached page with empty seed content.
+ const content=await getPublishedContent();
  if(content?.profile?.[0]?.avatar_url==='/api/preview/a31f4c87-fa46-4e0b-ae60-01503670014d')content.profile[0].avatar_url='/assets/muhannad-portrait.webp';
  const avatar=content?.profile?.[0]?.avatar_url;
  const safeAvatar=typeof avatar==='string'&&(/^\/api\/preview\/[a-zA-Z0-9_-]+$/.test(avatar)||avatar==='/assets/muhannad-portrait.webp')?avatar:'';
