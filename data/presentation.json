@@ -1,0 +1,137 @@
+{
+  "header": {
+    "title": "مهند سلامة",
+    "subtitle": "الملف المهني",
+    "enabled": true,
+    "showLogo": true,
+    "links": [],
+    "showNav": true,
+    "moreLabel": "المزيد",
+    "navOrder": [],
+    "navTargets": {}
+  },
+  "footer": {
+    "enabled": true,
+    "title": "مهند عبدالله سلامة",
+    "subtitle": "الملف المهني",
+    "description": "الخبرات · المؤهلات · الإنجازات · الخدمات",
+    "links": [
+      {
+        "id": "raed-footer",
+        "label": "ملفي على رائد",
+        "url": "https://raed.com.sa/public-profile/c0807b7b-2876-4fe0-bd4a-b0ee8396ba93",
+        "enabled": true
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "التدريب والتطوير · الموارد البشرية · الأعمال",
+    "primaryLabel": "استكشف شهاداتي",
+    "primaryUrl": "#credentials",
+    "secondaryLabel": "تعرّف على رحلتي",
+    "secondaryUrl": "#experience",
+    "note": "تطوير الأفراد.\nوتمكين الأعمال.",
+    "portraitTop": "MAS / PORTFOLIO",
+    "portraitCaption": "شغف بالتطوير، وخبرة في التنفيذ",
+    "portraitQuote": "الإنسان أولاً، والأثر دائماً.",
+    "floatLabel": "عامًا من الخبرة\nفي التدريب والأعمال",
+    "qualificationTitle": "CBP – Leadership",
+    "qualificationSubtitle": "محترف أعمال معتمد في القيادة",
+    "showStats": true,
+    "showPortrait": true,
+    "showQualification": true,
+    "showExperienceBadge": true
+  },
+  "membership": {
+    "enabled": true,
+    "title": "رائد موثوق",
+    "subtitle": "عضوية مهنية في منصة رائد",
+    "cardTitle": "بطاقة الاستشارات الإدارية",
+    "description": "تقديم الاستشارات الإدارية بالاستناد إلى خبرتي في الموارد البشرية والتدريب وتطوير الأعمال وبناء عمليات التشغيل.",
+    "number": "FL-954127482",
+    "issueDate": "2018-04-13",
+    "expiryDate": "2027-06-22",
+    "image": "/api/preview/raed-membership",
+    "linkLabel": "استعرض ملفي على منصة رائد"
+  },
+  "experienceOrder": "manual",
+  "credentialOrder": "original",
+  "sections": [
+    {
+      "id": "home",
+      "label": "نبذة عني",
+      "eyebrow": "",
+      "title": "",
+      "intro": "",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "membership",
+      "label": "رائد وموثوق",
+      "eyebrow": "انتماء مهني",
+      "title": "عضوية موثوق والاستشارات الإدارية",
+      "intro": "بطاقتي المهنية ورابط ملفي في منصة رائد.",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "experience",
+      "label": "الخبرات العملية",
+      "eyebrow": "المسيرة المهنية",
+      "title": "خبرات تصنع الفارق.",
+      "intro": "رحلة مهنية تجمع التدريب والموارد البشرية وتطوير الأعمال.",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "credentials",
+      "label": "الشهادات والمؤهلات",
+      "eyebrow": "التعلّم والإنجاز",
+      "title": "معرفة تتجدّد. وإنجازات تُوثّق.",
+      "intro": "مؤهلات مهنية وشهادات تقدير، ومجالات عمل حر تُعرض بمسمياتها والخدمات المرتبطة بها.",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "services",
+      "label": "الخدمات",
+      "eyebrow": "كيف أستطيع مساعدتك؟",
+      "title": "خبرة تتحوّل إلى حلول.",
+      "intro": "خدمات مهنية للأفراد، وحلول إدارية وتشغيلية وتطويرية للمؤسسات.",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "group-consultations",
+      "label": "الاستشارات الإدارية الجماعية",
+      "eyebrow": "نناقش التحدّي. ونبني الخطوات.",
+      "title": "الاستشارات الإدارية الجماعية",
+      "intro": "",
+      "enabled": true,
+      "showInNav": true
+    },
+    {
+      "id": "closing",
+      "label": "ختام الصفحة",
+      "eyebrow": "مسيرة مستمرة",
+      "title": "كل تجربة تضيف. وكل معرفة تفتح أفقًا.",
+      "intro": "",
+      "enabled": true,
+      "showInNav": false
+    }
+  ],
+  "copy": {
+    "experienceAsideTitle": "تنوّع في التجربة. وضوح في الأثر.",
+    "experienceAsideBody": "استكشف المسيرة حسب المجال، أو تصفّحها بالترتيب الذي يناسبك.",
+    "credentialHint": "اضغط على الشهادات لعرض التفاصيل",
+    "credentialNote": "المرفقات معاينات للعرض فقط. التواريخ بحسب البيانات المتاحة. مجالات العمل الحر تُعرض بمسمياتها والخدمات المرتبطة بها.",
+    "groupAsideTitle": "حوار مشترك. ورؤية أكثر وضوحًا.",
+    "groupAsideBody": "مساحة لمناقشة الحالة الإدارية والاستفادة من وجهات نظر متعددة.",
+    "groupTopicsLabel": "محاور يمكن مناقشتها",
+    "groupOutcomesTitle": "ماذا نهدف أن تحقق المجموعة؟",
+    "groupRequestEyebrow": "لنبدأ من احتياج مجموعتك",
+    "groupRequestTitle": "ما التحدّي الذي ترغبون في مناقشته؟",
+    "groupRequestBody": "اختر المحور، وأضف وصفًا مختصرًا لتسهيل تنسيق الجلسة."
+  }
+}
